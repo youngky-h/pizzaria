@@ -19,3 +19,9 @@ Route::get('/login',  [
         return view('auth_login');
     }
 ]);
+
+Route::get('/developer', [
+    'as' => 'brw.developer', 
+    'uses'=> 'DeveloperController@index'
+]);
+	
