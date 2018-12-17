@@ -1,0 +1,35 @@
+/*!
+ * HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
+ * Copyright (c) delight.im (https://www.delight.im/)
+ * Licensed under the MIT License (https://opensource.org/licenses/MIT)
+ */
+
+@import "sheets-of-paper.css";
+
+.page {
+	/* Styles for better appearance on screens only -- are reset to defaults in print styles later */
+
+	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
+	width: 107mm;
+	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
+	min-height: 150mm;
+
+	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
+	padding-left: 1mm;
+	padding-top: 1mm;
+	padding-right: 0mm;
+	padding-bottom: 1mm;
+}
+/* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
+@page {
+	/* You can only change the size, margins, orphans, widows and page breaks here */
+
+	/* Paper size and page orientation */
+	size: 107mm 150mm;
+
+	/* Margin per single side of the page */
+	margin-left: 1mm;
+	margin-top: 1mm;
+	margin-right: 1mm;
+	margin-bottom: 1mm;
+}

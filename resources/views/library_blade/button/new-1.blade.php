@@ -1,0 +1,1 @@
+<button id='btn_new' type="button" class="btn btn-dark" data-toggle="modal" data-target="#mdl_create"><i class="fa fa-plus"></i>Tambah Data</button>

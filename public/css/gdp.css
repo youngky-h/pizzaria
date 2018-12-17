@@ -1,0 +1,151 @@
+/*@font-face {
+  font-family: goldoni;
+  src: url('fonts/Goldoni.ttf.woff');
+}*/
+
+#topbar-text {
+    float:left;
+    margin-right:5px;
+}
+.nav.side-menu > li > a {
+    color: #eed262;
+    font-weight: 500;
+}
+.nav.child_menu > li > a {
+    color: #eed262;
+    font-weight: 500;
+}
+
+/*#profileImage {*/
+.profile {
+    margin-left: 10px;
+}
+
+.profile .profile_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eed262;
+    font-size: 30px;
+    color: #071528;
+    text-align: center;
+    line-height: 40px;
+    margin: 30px 0px;
+}
+
+.profile-pic {
+    width: 32.5px;
+    height: 32.5px;
+    border-radius: 50%;
+    background: #eed262;
+    font-size: 16px;
+    color: #071528;
+    text-align: center;
+    line-height: 32.5px;
+    margin: 0px 10px 0px 0px;
+}
+
+.navbar.nav_title > a > span {
+    font-family: goldoni;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #eed262;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#bodyLoader {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    overflow: hidden;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+
+}
+
+@font-face {
+    font-family: goldoni;
+    src: url('fonts/Goldoni.ttf.woff');
+}
+
+/* counter gentelella css*/
+.form-group .btn {
+    margin-bottom: 0px;
+}
